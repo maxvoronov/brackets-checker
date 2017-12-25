@@ -1,0 +1,24 @@
+{
+    "name": "maxvoronov/brackets-checker",
+    "description": "Simple library for brackets checking in strings",
+    "keywords": ["brackets", "parenthesis", "checker", "otus", "homework"],
+    "homepage": "https://github.com/maxvoronov/brackets-checker",
+    "minimum-stability": "stable",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Max Voronov",
+            "email": "maxivoronov@gmail.com",
+            "homepage": "https://github.com/MaxVoronov",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/maxvoronov/brackets-checker",
+        "issues": "https://github.com/maxvoronov/brackets-checker/issues"
+    },
+    "require": {
+        "php": "^7.0"
+    }
+}
