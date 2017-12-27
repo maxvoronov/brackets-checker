@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace MaxVoronov\Exceptions;
+namespace MaxVoronov\BracketsChecker\Exceptions;
 
 class InvalidArgumentException extends \Exception
 {

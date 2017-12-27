@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace MaxVoronov;
+namespace MaxVoronov\BracketsChecker;
 
 use PHPUnit\Framework\TestCase;
 
@@ -29,6 +29,12 @@ class BracketsCheckerTest extends TestCase
     public function testMissedCloseBracket()
     {
         $checker = new BracketsChecker("(()) ( ()");
+        $this->assertFalse($checker->isCorrect());
+    }
+
+    public function testFirstCloseBracket()
+    {
+        $checker = new BracketsChecker(")(");
         $this->assertFalse($checker->isCorrect());
     }
 

@@ -7,10 +7,18 @@ composer require maxvoronov/brackets-checker
 ```
 
 ## Usage
-ToDo
+This package based on pure PHP. Library can check the correctness of the brackets sentence.
+```php
+use MaxVoronov\BracketsChecker;
+
+$checker = new BracketsChecker("((()) ())");
+$checker->isCorrect();  // Returns true
+```
 
 ## Testing
-ToDo
+```
+composer test
+```
 
 ## License
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.

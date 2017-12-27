@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "MaxVoronov\\": "src"
+            "MaxVoronov\\BracketsChecker\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MaxVoronov\\": "tests"
+            "MaxVoronov\\BracketsChecker\\": "tests"
         }
     },
     "scripts": {
