@@ -10,7 +10,7 @@
 
 namespace MaxVoronov\BracketsChecker\Exceptions;
 
-class InvalidArgumentException extends \Exception
+class EmptySentenceException extends InvalidSentenceException
 {
     //
 }

@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace MaxVoronov\BracketsChecker;
+namespace MaxVoronov\BracketsChecker\Exceptions;
 
-interface BracketsCheckerInterface
+class InvalidCharactersException extends InvalidSentenceException
 {
-    public function isCorrect(): bool;
+    //
 }

@@ -14,10 +14,20 @@ composer require maxvoronov/brackets-checker
 ## Usage
 This package based on pure PHP. Library can check the correctness of the brackets sentence.
 ```php
-use MaxVoronov\BracketsChecker;
+use MaxVoronov\BracketsChecker\Checker;
 
-$checker = new BracketsChecker("((()) ())");
-$checker->isCorrect();  // Returns true
+$bracketsChecker = new Checker();
+$bracketsChecker->check("(( ))( )");    // Returns true
+$bracketsChecker->check("() )");        // Returns false
+```
+
+Also you can check custom brackets pairs and available filtering symbols:
+```php
+$brackets = ["(" => ")", "[" => "]", "<" => ">"];
+$availableChars = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "+", "-", "*", "/", " "];
+
+$bracketsChecker = new Checker($brackets, $availableChars);
+$bracketsChecker->check("([2 + 3] * <10> / (9 - 4)))");    // Returns true
 ```
 
 ## Testing
